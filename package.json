@@ -1,0 +1,19 @@
+{
+  "name": "mapleline-design",
+  "version": "1.0.0",
+  "description": "Boreal design system for MapleLine Ventures: shared CSS tokens, components, WCAG helper, and a sync script for consumer sites.",
+  "license": "UNLICENSED",
+  "private": true,
+  "files": [
+    "mapleline.css",
+    "mapleline.js",
+    "contrast.js",
+    "sync.js"
+  ],
+  "bin": {
+    "mapleline-sync": "sync.js"
+  },
+  "exports": {
+    "./contrast": "./contrast.js"
+  }
+}
