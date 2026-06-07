@@ -14,9 +14,11 @@ Système de design Boréal de MapleLine Ventures. Source unique de vérité pour
 
 ```json
 "dependencies": {
-  "mapleline-design": "github:devosland/mapleline-design#v1.0.0"
+  "mapleline-design": "git+https://github.com/devosland/mapleline-design.git#v1.0.0"
 }
 ```
+
+Note : utilise la forme `git+https` (pas le raccourci `github:`), sinon npm tente un clone SSH qui échoue en CI (pas de clé). Le repo est public, donc HTTPS clone anonymement, sans token.
 
 2. Ajoute un script `postinstall` qui synchronise les fichiers :
 
